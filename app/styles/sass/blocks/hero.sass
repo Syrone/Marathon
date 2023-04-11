@@ -1,0 +1,101 @@
+.hero
+	padding-top: 98px
+	position: relative
+	height: 100vh
+	min-height: 700px
+	background-color: $bg-gray
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		bottom: 0
+		right: 0
+		background-color: rgba(#000, 0.05)
+	.container
+		position: relative
+		height: 100%
+		max-width: 100%
+	&-slider
+		overflow: hidden
+		width: 100%
+		height: 100%
+		.swiper-pagination
+			bottom: 40px
+			&-bullet
+				width: 6px
+				height: 6px
+				margin-inline: 12px !important
+				background-color: $bg-white
+				opacity: 0.5
+				&-active
+					background-color: $textcolor
+					opacity: 1
+					position: relative
+					&::after
+						content: ''
+						width: 20px
+						height: 20px
+						border-radius: 20px
+						position: absolute
+						left: 50%
+						top: 50%
+						background-color: $bg-white
+						transform: translate(-50%, -50%)
+						z-index: -1
+
+	&-swiper
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 100%
+	&-title
+		max-width: 560px
+		font-size: 72px
+		line-height: 1.2
+		font-weight: 700
+		margin-bottom: 40px
+	&-text
+		font-size: 18px
+	&-image
+		max-width: 100%
+		max-height: 100%
+
+.marketing
+	position: absolute
+	bottom: 40px
+	left: 40px
+	display: flex
+	gap: 10px
+	padding: 10px
+	box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1)
+	background-color: $bg-white
+	z-index: 10
+	transform: translateX(-150vw)
+	transition: .3s ease-in-out
+	&.visible
+		transform: translateX(0)
+	&-image
+		flex-shrink: 0
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&-content
+		max-width: 147px
+		line-height: normal
+	&-suptitle
+		font-size: 11px
+		color: $gray
+	&-title
+		font-size: 15px
+	&-text
+		font-size: 11px
+		color: $gray
+	&-close
+		align-self: flex-start
+		margin-left: 20px
+		width: 10px
+		height: 10px
+		background: url(../images/dist/close.png) no-repeat center
+		cursor: pointer
