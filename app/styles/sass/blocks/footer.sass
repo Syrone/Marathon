@@ -1,0 +1,63 @@
+.footer
+	&-top
+		display: grid
+		grid-template-columns: 0.55fr 0.5fr 1fr
+		padding-block: 100px
+	&-list
+		&-title
+			font-size: 16px
+			text-transform: uppercase
+			margin-bottom: 20px
+	&-link 
+		display: block
+		margin-top: 10px
+	&-link, &-text
+		font-size: 13px
+		color: $thundora
+	&-bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-block: 40px
+		border-top: 1px solid #eeeeee
+		&-list
+			display: flex
+			gap: 45px
+			font-size: 13px
+			font-weight: 700
+
+.input-wrapper, .input-field
+	width: 100%
+
+.input
+	&-wrapper
+		margin-block: 20px
+		position: relative
+		border-bottom: 2px solid $textcolor
+		padding-block: 5px
+	&-field
+		font-size: 13px
+		font-weight: 500
+		color: $textcolor
+		border: none
+		padding-right: 80px
+		outline: none
+		&::placeholder
+			color: rgba($thundora, .5)
+	&-btn
+		position: absolute
+		right: 0
+		bottom: 0
+		padding: 10px 10px
+		font-size: 13px
+		font-weight: 500
+		color: $textcolor
+		z-index: 2
+
+.social
+	display: flex
+	gap: 30px
+	&-link
+		transition: .3s ease-in-out
+		&:hover
+			opacity: 0.6

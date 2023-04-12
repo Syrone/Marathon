@@ -1,4 +1,6 @@
 .product
+	position: relative
+	padding-bottom: 20px
 	&-image
 		margin-bottom: 15px
 		img
@@ -9,6 +11,13 @@
 		font-weight: 500
 		color: $thundora
 		margin-bottom: 3px
+		a::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
 	&-price
 		font-size: 13px
 		font-weight: 700

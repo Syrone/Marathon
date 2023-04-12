@@ -1,0 +1,40 @@
+.shop
+	&-banners
+		padding-top: 45px
+		.container-fluid
+			display: flex
+			justify-content: space-between
+	&-banner
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		gap: 5px
+		min-height: 420px
+		color: $bg-white
+		width: 50%
+		padding: 20px
+		background-color: $textcolor
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+		.link
+			&:hover, &.active
+				color: $bg-white
+			&::before
+				background-color: $bg-white
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-color: rgba(#d70808, .1)
+		&-title, &-text
+			position: relative
+			z-index: 1
+		&-title
+			font-size: 48px
+			font-weight: 500
