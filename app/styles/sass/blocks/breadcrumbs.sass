@@ -1,0 +1,22 @@
+.breadcrumbs
+	&-list
+		display: flex
+		align-items: center
+		gap: 35px
+		padding-block: 40px
+		font-size: 10px
+		color: $gray
+		text-transform: uppercase
+		border-bottom: 1px solid #eee
+		> li
+			position: relative
+	&-link
+		&::after
+			content: '/'
+			position: absolute
+			right: calc( -35px / 2 )
+			top: 0
+	&-active
+		color: $textcolor
+		&::after
+			display: none

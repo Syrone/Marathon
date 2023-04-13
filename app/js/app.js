@@ -11,6 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		},
 	})
 
+	const heroCatalogSwiper = new Swiper('.hero-catalog-slider', {
+		
+	})
+
 	// marketing
 	const marketing = document.querySelector('.marketing'),
 		data = [
